@@ -17,6 +17,7 @@
 		<mule.tools.version>1.0</mule.tools.version>
 		<hibernate.version>3.6.3.Final</hibernate.version>
 		<hibernate-validator.version>4.3.1.Final</hibernate-validator.version>
+		<mysql.version>5.1.30</mysql.version>
 	</properties>
 
 	<build>
@@ -196,13 +197,9 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.30</version>
+			<version>${mysql.version}</version>
 		</dependency>
 
-		<!-- <groupId>org.hibernate</groupId> -->
-		<!-- <artifactId>hibernate-core</artifactId> -->
-		<!-- <version>${hibernate.version}</version> -->
-		<!-- </dependency> -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-entitymanager</artifactId>
@@ -234,20 +231,9 @@
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-validator-annotation-processor</artifactId>
-			<version>4.1.0.Final</version>
+			<version>${hibernate-validator.version}</version>
 			<scope>test</scope>
 		</dependency>
-
-		<!-- <dependency> -->
-		<!-- <groupId>org.springframework</groupId> -->
-		<!-- <artifactId>spring-jdbc</artifactId> -->
-		<!-- <version>${spring.version}</version> -->
-		<!-- </dependency> -->
-		<!-- <dependency> -->
-		<!-- <groupId>org.springframework</groupId> -->
-		<!-- <artifactId>spring-tx</artifactId> -->
-		<!-- <version>${spring.version}</version> -->
-		<!-- </dependency> -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-orm</artifactId>
@@ -285,7 +271,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aspects</artifactId>
-			<version>3.1.2.RELEASE</version>
+			<version>${spring.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.mule.modules</groupId>
@@ -299,8 +285,6 @@
 			<version>${mule.version}</version>
 			<scope>provided</scope>
 		</dependency>
-		
-
 	</dependencies>
 
 	<repositories>
